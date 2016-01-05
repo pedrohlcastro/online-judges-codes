@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int coloca(int v[505][505],int m,int n,int l,int a){
+int put_in_v(int v[505][505],int m,int n,int l,int a){
 	int i=0,j;
 	for(j=a;j<=n;j++){
 		i++;
@@ -30,7 +30,7 @@ int main(){
 				leds++;
 			}
 			else{
-				leds+=coloca(light,m,n,l,col);
+				leds+=put_in_v(light,m,n,l,col);
 			}
 		}
 		printf("Lights: %d\n", leds);
