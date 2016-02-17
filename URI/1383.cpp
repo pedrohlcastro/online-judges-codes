@@ -76,19 +76,23 @@ int check_game(int sud[9][9],int i,int n){
 		}
 	}
 	//lines
-	for(j=0;j<9;j++)
+	for(j=0;j<9;j++){
 		won=check_line(sud,j,numbers);
-	if(won==0){
-		printf("Instancia %d\nNAO\n\n",i+1);
-		return 0;
+		if(won==0){
+			printf("Instancia %d\nNAO\n\n",i+1);
+			return 0;
+		}
 	}
+	
 	//columns
-	for(j=0;j<9;j++)
+	for(j=0;j<9;j++){
 		won=check_column(sud,j,numbers);
-	if(won==0){
-		printf("Instancia %d\nNAO\n\n",i+1);
-		return 0;
+		if(won==0){
+			printf("Instancia %d\nNAO\n\n",i+1);
+			return 0;
+		}
 	}
+	
 	//blocks 3x3
 	for(j=0;j<3;j++){
 		for(k=0;k<3;k++){
