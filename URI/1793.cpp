@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+//zero
 void allzero(int v[]){
     int i;
     for(i=0;i<1111;i++)
