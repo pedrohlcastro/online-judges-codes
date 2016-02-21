@@ -64,9 +64,8 @@ int main(){
 			puts(input_text[i]);
 		}
 
-		
-
 		cin>>n;
+	//test
 		if(n!=0){
 			printf("\n");
 		}
